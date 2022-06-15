@@ -17,7 +17,7 @@ const portfolioSchema = new Schema({
     template_type: { type: String, trim: true, required: true, default: "1" },
     website: { type: String, trim: true, required: true },
     profile_id: { type: String, trim: true, required: true },
-    date_created: { type: Date, default: moment().format('DD/MM/YYYY') }
+    date_created: { type: String, default: moment().format('DD/MM/YYYY') }
 }, { timestampes: true });
 
 // EXPORT THE MODEL 
